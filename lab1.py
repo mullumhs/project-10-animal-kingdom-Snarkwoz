@@ -55,5 +55,7 @@ brown_snake = Snake("brown snake","2 years","carnivore","Australia","1.5m")
 # Write code that prints out the details of each animal and calls their specific behaviors.
 
 print(f"{octopus.species} is {octopus.age} old, is a {octopus.diet}, lives in {octopus.habitat} and has {octopus.arms} arms")
-
-
+octopus.swim()
+octopus.camoflage()
+print(f"{brown_snake.species} is {brown_snake.age} old, is a {brown_snake.diet}, lives is {brown_snake.habitat} and is {brown_snake.length} long")
+brown_snake.hunt()
