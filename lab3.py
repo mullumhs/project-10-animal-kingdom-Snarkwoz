@@ -4,7 +4,7 @@
 - File Name: lab3.py
 - Teacher: David Steedman
 - Class: Software Engineering
-- Description: Build a Zoo class to manage a collection of animals from the Animal
+- Description: Build a Zoo class to manage a collection of animals from the Animal 
                Kingdom program. Demonstrate managing objects and class interactions.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -77,17 +77,16 @@ class Zoo():
     def display_all_info(self):
         for animal in self.animals:
             print(animal.display_info())
-            
 
 # Create instances of derived Animal classes and add them to the Zoo.
 
-octopus = Octopus("blue ring octopus","6 months","carnivore","reefs","8")
-brown_snake = Snake("brown snake","2 years","carnivore","Australia","1.5m")
+octopus = Octopus("octopus","9 months","carnivore","reefs","8")
+snake = Snake("green python","1 year","carnivore","Australia","2m")
 
 # Demonstrate the Zoo's functionality by calling its methods.
 
-my_zoo = Zoo
-my_zoo.add_animals(octopus)
-my_zoo.add_animals(brown_snake)
-my_zoo.feed_animals()
-my_zoo.display_all_info()
+
+Zoo.add_animals(octopus)
+Zoo.add_animals(snake)
+Zoo.feed_animals()
+Zoo.display_all_info()
