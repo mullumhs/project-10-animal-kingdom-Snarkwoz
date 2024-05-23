@@ -68,7 +68,7 @@ class Zoo():
 
     def add_animals(self,species):
         self.animals.append(species)
-        return f"{self.species} has been added to the zoo"
+        return f"{species.species} has been added to the zoo"
     
     def feed_animals(self):
         for animal in self.animals:
@@ -76,17 +76,18 @@ class Zoo():
     
     def display_all_info(self):
         for animal in self.animals:
-            print(animal.display_info())
+            animal.display_info()
 
 # Create instances of derived Animal classes and add them to the Zoo.
 
 octopus = Octopus("octopus","9 months","carnivore","reefs","8")
 snake = Snake("green python","1 year","carnivore","Australia","2m")
+zoo = Zoo()
 
 # Demonstrate the Zoo's functionality by calling its methods.
 
 
-Zoo.add_animals(octopus)
-Zoo.add_animals(snake)
-Zoo.feed_animals()
-Zoo.display_all_info()
+zoo.add_animals(octopus)
+zoo.add_animals(snake)
+zoo.feed_animals()
+zoo.display_all_info()
